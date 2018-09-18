@@ -1,0 +1,15 @@
+source ~/tensorflow/bin/activate
+в папке darkflow-master
+
+
+для картинок:
+	./flow --imgdir sample_img/ --model cfg/yolo.cfg --load bin/yolo.weights
+	json:
+	./flow --imgdir sample_img/ --model cfg/yolo.cfg --load bin/yolo.weights --json true
+
+для видео:
+	./flow --model cfg/yolo.cfg --load bin/yolo.weights --demo 1598.mp4 --saveVideo --labels 	mylabels.txt
+
+
+кол-во объектов:
+	https://github.com/thtrieu/darkflow/issues/859
